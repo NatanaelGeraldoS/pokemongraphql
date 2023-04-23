@@ -18,7 +18,6 @@ const Pokemons = () => {
 
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error : {error.message}</p>;
-    console.log(data.pokemon_v2_pokemon);
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 px-10 mx-auto">
             {data.pokemon_v2_pokemon.map((PokemonDetail) => {

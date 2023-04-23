@@ -4,7 +4,6 @@ import PokemonCard from "./PokemonCard";
 
 const Favorite = () => {
     const ListFavorite = readStoredFavorite();
-    console.log(ListFavorite);
     if (ListFavorite === []) {
         return <div>Favorite is Empty</div>;
     }

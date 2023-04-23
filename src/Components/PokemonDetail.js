@@ -22,14 +22,16 @@ const PokemonDetail = () => {
     });
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error : {error.message}</p>;
-    console.log(data.pokemon_v2_pokemon[0]);
     const { name, height, order, pokemon_species_id } =
         data.pokemon_v2_pokemon[0];
-    console.log({ name, height, order, pokemon_species_id });
     const onClickFav = () => {
         const storedList = readStoredFavorite();
         var mergedList = [...storedList, { id, name }];
         mergedList.sort((a, b) => a.id - b.id);
+        mergedList = Array.from(
+            new Set(mergedList.map(JSON.stringify)),
+            JSON.parse
+        );
         storeFavorite(mergedList);
     };
     const onClickUnFav = () => {
