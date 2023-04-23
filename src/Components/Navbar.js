@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faHeart } from "@fortawesome/free-solid-svg-icons";
-import { ReactComponent as PokeballIcon } from "./Assets/Pokeball.svg";
+import { ReactComponent as PokeballIcon } from "../Assets/Pokeball.svg";
 const Navbar = () => {
     return (
         <nav className="flex items-center justify-between flex-wrap bg-red-500 p-6 py-3 drop-shadow-lg rounded-b-2xl sticky top-0 w-full">
@@ -12,9 +12,12 @@ const Navbar = () => {
                 </span>
             </div>
             <div className="flex items-center">
-                <div className="text-white hover:text-gray-300 transition-all duration-200 cursor-pointer font-semibold py-2 px-4 mr-2">
+                <a
+                    href="/Search"
+                    className="text-white hover:text-gray-300 transition-all duration-200 cursor-pointer font-semibold py-2 px-4 mr-2"
+                >
                     <FontAwesomeIcon icon={faSearch} />
-                </div>
+                </a>
                 <div className="text-white hover:text-gray-300 transition-all duration-200 cursor-pointer font-semibold py-2 px-4 mr-2">
                     <FontAwesomeIcon icon={faHeart} />
                 </div>
