@@ -1,9 +1,11 @@
 import React from "react";
 import { useQuery, gql } from "@apollo/client";
+import { Link } from "react-router-dom";
 import PokemonCard from "./PokemonCard";
+
 const GET_POKEMONS = gql`
-    {
-        pokemon_v2_pokemon(limit: 50) {
+    query ($name: String) {
+        pokemon_v2_pokemon(where: { name: { _ilike: $name } }) {
             id
             name
             pokemon_v2_pokemonsprites {
@@ -13,12 +15,13 @@ const GET_POKEMONS = gql`
         }
     }
 `;
-const Pokemons = () => {
-    const { loading, error, data } = useQuery(GET_POKEMONS);
-
+const SearchPokemon = ({ pokemonSearch }) => {
+    const { loading, error, data } = useQuery(GET_POKEMONS, {
+        variables: { name: "%" + pokemonSearch + "%" },
+    });
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error : {error.message}</p>;
-    console.log(data.pokemon_v2_pokemon);
+
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 px-10 mx-auto">
             {data.pokemon_v2_pokemon.map((PokemonDetail) => {
@@ -32,4 +35,5 @@ const Pokemons = () => {
         </div>
     );
 };
-export default Pokemons;
+
+export default SearchPokemon;
