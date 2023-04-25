@@ -10,6 +10,12 @@ const GET_POKEMON = gql`
             height
             order
             pokemon_species_id
+            pokemon_v2_pokemontypes {
+                pokemon_v2_type {
+                    name
+                    id
+                }
+            }
         }
     }
 `;
@@ -20,13 +26,16 @@ const PokemonDetail = () => {
     const { loading, error, data } = useQuery(GET_POKEMON, {
         variables: { id: id },
     });
+
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error : {error.message}</p>;
-    const { name, height, order, pokemon_species_id } =
+
+    const { name, height, order, pokemon_species_id,pokemon_v2_pokemontypes } =
         data.pokemon_v2_pokemon[0];
+
     const onClickFav = () => {
         const storedList = readStoredFavorite();
-        var mergedList = [...storedList, { id, name }];
+        var mergedList = [...storedList, { id, name,pokemon_v2_pokemontypes }];
         mergedList.sort((a, b) => a.id - b.id);
         mergedList = Array.from(
             new Set(mergedList.map(JSON.stringify)),
@@ -34,16 +43,19 @@ const PokemonDetail = () => {
         );
         storeFavorite(mergedList);
     };
+
     const onClickUnFav = () => {
         const storedList = readStoredFavorite();
         var mergedList = [...storedList];
         mergedList = mergedList.filter((x) => x.id !== id);
         storeFavorite(mergedList);
     };
+
     const image =
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/" +
         id +
         ".svg";
+
     return (
         <div className="mt-5 text-center">
             <img src={image} className="text-center mx-auto" />

@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import PokemonDetail from "./PokemonDetail";
-import Pokemons from "./Pokemons";
+import Pokemons from "./Home";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import Search from "./Search";

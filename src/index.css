@@ -14,3 +14,110 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Warna untuk tipe Fire */
+.fire {
+  background-color: #FF4422; /* merah */
+  color: #FFFFFF; /* putih */
+}
+
+/* Warna untuk tipe Water */
+.water {
+  background-color: #3399FF; /* biru */
+  color: #FFFFFF; /* putih */
+}
+
+/* Warna untuk tipe Grass */
+.grass {
+  background-color: #77CC55; /* hijau */
+  color: #FFFFFF; /* putih */
+}
+
+/* Warna untuk tipe Electric */
+.electric {
+  background-color: #FFCC33; /* kuning */
+  color: #FFFFFF; /* putih */
+}
+
+/* Warna untuk tipe Normal */
+.normal {
+  background-color: #A8A878; /* abu-abu */
+  color: #FFFFFF; /* putih */
+}
+
+/* Warna untuk tipe Fighting */
+.fighting {
+  background-color: #C03028; /* merah tua */
+  color: #FFFFFF; /* putih */
+}
+
+/* Warna untuk tipe Flying */
+.flying {
+  background-color: #A890F0; /* ungu */
+  color: #FFFFFF; /* putih */
+}
+
+/* Warna untuk tipe Poison */
+.poison {
+  background-color: #A040A0; /* ungu tua */
+  color: #FFFFFF; /* putih */
+}
+
+/* Warna untuk tipe Ground */
+.ground {
+  background-color: #E0C068; /* cokelat */
+  color: #FFFFFF; /* putih */
+}
+
+/* Warna untuk tipe Rock */
+.rock {
+  background-color: #B8A038; /* kuning kecokelatan */
+  color: #FFFFFF; /* putih */
+}
+
+/* Warna untuk tipe Bug */
+.bug {
+  background-color: #A8B820; /* hijau kekuningan */
+  color: #FFFFFF; /* putih */
+}
+
+/* Warna untuk tipe Ghost */
+.ghost {
+  background-color: #705898; /* ungu keabuan */
+  color: #FFFFFF; /* putih */
+}
+
+/* Warna untuk tipe Steel */
+.steel {
+  background-color: #B8B8D0; /* abu-abu kebiruan */
+  color: #FFFFFF; /* putih */
+}
+
+/* Warna untuk tipe Psychic */
+.psychic {
+  background-color: #F85888; /* pink */
+  color: #FFFFFF; /* putih */
+}
+
+/* Warna untuk tipe Ice */
+.ice {
+  background-color: #98D8D8; /* biru muda */
+  color: #FFFFFF; /* putih */
+}
+
+/* Warna untuk tipe Dragon */
+.dragon {
+  background-color: #7038F8; /* ungu kebiruan */
+  color: #FFFFFF; /* putih */
+}
+
+/* Warna untuk tipe Dark */
+.dark {
+  background-color: #705848; /* cokelat kehitaman */
+  color: #FFFFFF; /* putih */
+}
+
+/* Warna untuk tipe Fairy */
+.fairy {
+  background-color: #EE99AC; /* merah muda */
+  color: #FFFFFF; /* putih */
+}
