@@ -1,37 +1,50 @@
-# Pokedex
-Pokedex NG is a web application that displays information about Pokemon using the PokeAPI. The application is built using React JS and GraphQL to fetch data from the PokeAPI.
+# 🏆 Pokedex NG  
 
-You can access the website at https://pokedexng.netlify.app/.
+Pokedex NG is a dynamic web application that displays detailed Pokémon information using **React.js** and **GraphQL**, powered by the **PokeAPI**. It provides an engaging and interactive experience for Pokémon enthusiasts.  
 
-### Features
-Pokedex NG allows you to:
+🔗 **Live Demo:** [Pokedex NG](https://pokemongraphql.natanaelgeraldo.com/)  
 
-- Search for a Pokemon by name
-- View detailed information about a Pokemon, including its abilities, moves, and etc.
-- View a list of all Pokemon
-- Favorite the Pokemon
+---
 
-### Technologies Used
-Pokedex NG is built using:
+## 🚀 Features  
 
-- React JS: A JavaScript library for building user interfaces.
-- GraphQL: A query language for APIs that allows clients to specify exactly what data they need and in what format.
-- Apollo Client: A fully-featured GraphQL client that manages state and caching for your application.
-- PokeAPI: A free, open-source API that provides data on Pokemon from all generations.
-### Installation and Setup
-To run the application locally, follow these steps:
+Pokedex NG allows you to:  
+✅ **Search Pokémon** by name.  
+✅ **View detailed Pokémon info**, including abilities, moves, and more.  
+✅ **Browse a complete Pokémon list** from all generations.  
+✅ **Favorite Pokémon** for quick access.  
 
-1. Clone the repository to your local machine.
-2. Install the dependencies by running npm install.
-3. Start the development server by running npm start.
+---
 
-```
+## 🛠 Technologies Used  
+
+- **React.js** – A JavaScript library for building user interfaces.  
+- **GraphQL** – A query language for efficient API data fetching.  
+- **Apollo Client** – A state management and caching GraphQL client.  
+- **PokeAPI** – A free API providing comprehensive Pokémon data.  
+
+---
+
+## ⚙️ Installation & Setup  
+
+To run the project locally, follow these steps:  
+
+```bash
+# Clone the repository
 git clone https://github.com/NatanaelGeraldoS/pokemongraphql.git
-cd pokemongraphql
-npm install
-npm start
 ```
-
-### Credits
-1. The design of the application was inspired by Pokedex.org.
-2. The data used in the application is sourced from the PokeAPI.
+```bash
+# Navigate to the project directory
+cd pokemongraphql
+```
+```bash
+# Install dependencies
+npm install
+```
+```bash
+# Start the development server
+npm start
+The app will be available at http://localhost:3000/
+```
+## 🎨 Credits
+📡 Data Source: All Pokémon data is provided by [PokeAPI](https://pokeapi.co/).
